@@ -1,0 +1,11 @@
+<td>{{user.name}}</td> <!--20.1)Sposto  i dati che voglio che compaiano sul componente figlio app-user-->
+<td>{{user.lastname}}</td>
+<td>{{user.fiscalcode}}</td>
+<td>{{user.email}}</td>
+<td>{{user.phone}}</td>
+<td>{{user.province}}</td>
+<td>{{user.age}}</td>
+<td>
+    <button class="update" (click)="updateUser()">UPDETE</button>
+    <button class="delete" (click)="deleteUser()">DELETE</button> <!--21.2 aggiungo questo bottone--> <!--21.3) Diciamo ad angular che deve prendere l'evento  click che deve prendere il metodo deleteUSer che c'è nella nostra classe.Angular sa che (click) è un evento con un valore in uscita  che richiama il metodo deleteUser(user) -->
+</td>
